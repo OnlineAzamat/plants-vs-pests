@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+}
+
+.container #canvas {
+  border: 3px solid black;
+  width: 1200px;
+  height: 700px;
+}
+
+.container .buttons-group {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container .buttons-group .arsenal {
+  padding: 5px 8px;
+  border: 1px solid transparent;
+  transition: 0.15s;
+}
+.container .buttons-group .arsenal:hover {
+  border: 1px solid black;
+}
+.container .buttons-group .arsenal button:checked {
+  border: 1px solid red;
+}
